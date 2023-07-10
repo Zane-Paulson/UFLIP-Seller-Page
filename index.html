@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="/css/general.css" />
-        <link rel="stylesheet" href="/css/queries.css" />
         <link rel="stylesheet" href="/css/style.css" />
 
         <meta charset="UTF-8" />
@@ -17,13 +23,128 @@
         <title>UFLIP</title>
     </head>
     <body>
-        <img
-            class="back-img"
-            src="imgs/ticket-pattern-b.png"
-            alt="ticket background"
-        />
         <main class="site-container">
             <div class="main-container">
+                <header class="header-mobile">
+                    <div class="nav-menu">
+                        <a class="nav-menu-btn" href="#">
+                            <svg
+                                class="nav-menu-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class=""
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo-container">
+                        <img
+                            class="uflip-logo"
+                            src="/imgs/logo-sm.png"
+                            href="#"
+                            alt="UFLIP logo"
+                        />
+                    </div>
+                    <div class="sign-in">
+                        <img
+                            src="imgs/user-solid-sm.png"
+                            alt="icon of a person"
+                        />
+                    </div>
+                </header>
+
+                <div class="dropdown-container">
+                    <div class="dropdown-body">
+                        <div class="dropdown-nav-box">
+                            <a href="#" class="dropdown-nav-text">HOME</a>
+                            <div class="dropdown-nav-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="22"
+                                    height="22"
+                                    viewBox="0 0 22 22"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M21.9942 10.9785C21.9942 11.752 21.4213 12.3578 20.7719 12.3578H19.5496L19.5763 19.2414C19.5763 19.3574 19.5687 19.4734 19.5572 19.5895V20.2812C19.5572 21.2309 18.8735 22 18.0293 22H17.4181C17.3761 22 17.3341 22 17.2921 21.9957C17.2386 22 17.1851 22 17.1317 22H14.9735C14.1293 22 13.4456 21.2309 13.4456 20.2812V16.5C13.4456 15.7395 12.8994 15.125 12.2233 15.125H9.77861C9.10251 15.125 8.55628 15.7395 8.55628 16.5V20.2812C8.55628 21.2309 7.87255 22 7.02838 22H4.89313C4.83583 22 4.77853 21.9957 4.72124 21.9914C4.6754 21.9957 4.62956 22 4.58372 22H3.97256C3.12839 22 2.44465 21.2309 2.44465 20.2812V15.4688C2.44465 15.4301 2.44465 15.3871 2.44847 15.3484V12.3578H1.22233C0.534768 12.3578 0 11.7563 0 10.9785C0 10.5918 0.114593 10.248 0.381977 9.94727L10.1759 0.34375C10.4432 0.0429688 10.7488 0 11.0162 0C11.2836 0 11.5892 0.0859375 11.8184 0.300781L21.5741 9.94727C21.8796 10.248 22.0324 10.5918 21.9942 10.9785Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-nav-box">
+                            <a href="#" class="dropdown-nav-text">FLIPPER</a>
+                            <div class="dropdown-nav-icon">
+                                <img
+                                    src="imgs/user-solid-sm.png"
+                                    alt="icon of user"
+                                />
+                            </div>
+                        </div>
+                        <div class="dropdown-nav-box">
+                            <a href="#" class="dropdown-nav-text seller"
+                                >SELLER</a
+                            >
+                            <div class="dropdown-nav-icon seller">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="19"
+                                    height="22"
+                                    viewBox="0 0 19 22"
+                                    fill="#febd1d"
+                                >
+                                    <path
+                                        d="M9.5 0C12.1244 0 14.25 2.18778 14.25 4.88889C14.25 7.59 12.1244 9.77778 9.5 9.77778C6.87562 9.77778 4.75 7.59 4.75 4.88889C4.75 2.18778 6.87562 0 9.5 0ZM14.25 12.8822C14.25 14.1778 13.9175 17.1967 11.6494 20.57L10.6875 14.6667L11.8037 12.3689C11.0675 12.2833 10.2956 12.2222 9.5 12.2222C8.70437 12.2222 7.9325 12.2833 7.19625 12.3689L8.3125 14.6667L7.35062 20.57C5.0825 17.1967 4.75 14.1778 4.75 12.8822C1.91187 13.7378 0 15.2778 0 17.1111V22H19V17.1111C19 15.2778 17.1 13.7378 14.25 12.8822Z"
+                                        fill="#febd1d"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-nav-box">
+                            <a href="#" class="dropdown-nav-text">LOGIN</a>
+                            <div class="dropdown-nav-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="22"
+                                    height="22"
+                                    viewBox="0 0 22 22"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M11 22V19.5556H19.5556V2.44444H11V0H19.5556C20.2278 0 20.8034 0.239556 21.2826 0.718667C21.7617 1.19778 22.0008 1.77304 22 2.44444V19.5556C22 20.2278 21.7604 20.8034 21.2813 21.2826C20.8022 21.7617 20.227 22.0008 19.5556 22H11ZM8.55555 17.1111L6.875 15.3389L9.99167 12.2222H0V9.77778H9.99167L6.875 6.66111L8.55555 4.88889L14.6667 11L8.55555 17.1111Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-nav-box">
+                            <a href="#" class="dropdown-nav-text">SIGNUP</a>
+                            <div class="dropdown-nav-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="19"
+                                    viewBox="0 0 18 19"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M16 16.5V2.5H2V16.5H16ZM16 0.5C16.5304 0.5 17.0391 0.710714 17.4142 1.08579C17.7893 1.46086 18 1.96957 18 2.5V16.5C18 17.0304 17.7893 17.5391 17.4142 17.9142C17.0391 18.2893 16.5304 18.5 16 18.5H2C1.46957 18.5 0.960859 18.2893 0.585786 17.9142C0.210714 17.5391 0 17.0304 0 16.5V2.5C0 1.96957 0.210714 1.46086 0.585786 1.08579C0.960859 0.710714 1.46957 0.5 2 0.5H16ZM8 4.5H10V8.5H14V10.5H10V14.5H8V10.5H4V8.5H8V4.5Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <header class="header">
                     <div class="logo-container">
                         <img
@@ -73,11 +194,13 @@
                     <div class="features-container">
                         <div class="feature-row">
                             <div class="feature-el">
-                                <img
-                                    class="feature-img"
-                                    src="imgs/more-opportunity.png"
-                                    alt="icons of people connected in a web"
-                                />
+                                <div class="feature-img">
+                                    <img
+                                        class="feature-img"
+                                        src="imgs/more-opportunity.png"
+                                        alt="icons of people connected in a web"
+                                    />
+                                </div>
                                 <div class="feature-text-box">
                                     <h3 class="feature-header">
                                         MORE OPPORTUNITY
@@ -91,11 +214,13 @@
                                 </div>
                             </div>
                             <div class="feature-el">
-                                <img
-                                    class="feature-img"
-                                    src="imgs/instant-access.png"
-                                    alt=""
-                                />
+                                <div class="feature-img">
+                                    <img
+                                        class="feature-img"
+                                        src="imgs/instant-access.png"
+                                        alt=""
+                                    />
+                                </div>
                                 <div class="feature-text-box">
                                     <h3 class="feature-header">
                                         INSTANT ACCESS
@@ -111,11 +236,13 @@
                         </div>
                         <div class="feature-row feature-row2">
                             <div class="feature-el">
-                                <img
-                                    class="feature-img"
-                                    src="imgs/realtime-info.png"
-                                    alt=""
-                                />
+                                <div class="feature-img">
+                                    <img
+                                        class="feature-img realtime-info"
+                                        src="imgs/realtime-info.png"
+                                        alt=""
+                                    />
+                                </div>
                                 <div class="feature-text-box">
                                     <h3 class="feature-header">
                                         REAL TIME INFO
@@ -129,11 +256,13 @@
                                 </div>
                             </div>
                             <div class="feature-el">
-                                <img
-                                    class="feature-img inv-mang"
-                                    src="imgs/inventory-management.png"
-                                    alt=""
-                                />
+                                <div class="feature-img">
+                                    <img
+                                        class="feature-img inv-mang"
+                                        src="imgs/inventory-management.png"
+                                        alt=""
+                                    />
+                                </div>
                                 <div class="feature-text-box">
                                     <h3 class="feature-header">
                                         INVENTORY MANAGEMENT
@@ -150,10 +279,12 @@
                     </div>
 
                     <div class="crush-competition">
-                        <img
-                            src="imgs/crush-the-competition.png"
-                            alt="vector art of a scale"
-                        />
+                        <div class="crush-competition-img">
+                            <img
+                                src="imgs/crush-the-competition.png"
+                                alt="vector art of a scale"
+                            />
+                        </div>
                         <div class="competition-text-box">
                             <h2 class="competition-header">
                                 CRUSH THE COMPETITION
@@ -173,14 +304,26 @@
                 </div>
 
                 <footer class="footer">
-                    <div class="natb-logo"></div>
+                    <div class="natb-logo">
+                        <img
+                            src="imgs/natb_logo_light.png"
+                            alt="National Association of Ticket Brokers Logo"
+                        />
+                    </div>
                     <div class="privacy">
-                        <a href="">About Us</a>
-                        <a href="">Privacy Policy</a>
+                        <a class="footer-links" href="">About Us</a>
+                        <a class="footer-links" href="">Privacy Policy</a>
                         <p>&copy;2023 Copyright UFLIP.COM</p>
+                    </div>
+                    <div class="natb-logo-trash">
+                        <img
+                            src="imgs/natb_logo_light.png"
+                            alt="National Association of Ticket Brokers Logo"
+                        />
                     </div>
                 </footer>
             </div>
         </main>
+        <script defer src="js/script.js"></script>
     </body>
 </html>
